@@ -7,8 +7,8 @@
 `default_nettype none
 
 module bitmap_rom (
-    input wire [6:0] x,
-    input wire [6:0] y,
+    input wire [4:0] x,
+    input wire [4:0] y,
     output wire pixel
 );
 
@@ -95,8 +95,6 @@ initial begin
     mem[78] = 8'h0f;
     mem[79] = 8'h00;
 end
-  wire _unused_ok = &{x[6:5], y[6:5]};
-
   // Địa chỉ byte: y * 4 + (x / 8)
   wire [6:0] addr = {y[4:0], x[4:3]};
   // Trích xuất bit
