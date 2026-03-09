@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Use the convert_rom.py in the image_convert folder to automatically convert your 20x20 custom logo in jpeg/png file format to bit map as rom. Use wire _unused_ok to define signal you don't use, and /* verilator lint_off WIDTH */ to disable MISMATCH warning when you connect the signal.
 
 ## How to test
 
-Explain how to use your project
+Copy the project.v and bitmap_rom.v on the vgaplayground website to test if it works as expected. You can go to my youtube channel: huyatieo, for better understanding.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None
