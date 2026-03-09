@@ -17,4 +17,4 @@ Copy the project.v and bitmap_rom.v on the vgaplayground website to test if it w
 
 ## External hardware
 
-None
+asics
