@@ -5,11 +5,6 @@
  */
 
 `default_nettype none
-
-parameter LOGO_SIZE = 160;  // Size of the logo in pixels
-parameter DISPLAY_WIDTH = 640;  // VGA display width
-parameter DISPLAY_HEIGHT = 480;  // VGA display height
-
 `define COLOR_WHITE 3'd7
 
 module tt_um_HUYATIEO_vga (
@@ -22,7 +17,11 @@ module tt_um_HUYATIEO_vga (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
-
+    
+  parameter LOGO_SIZE = 160;  // Size of the logo in pixels
+  parameter DISPLAY_WIDTH = 640;  // VGA display width
+  parameter DISPLAY_HEIGHT = 480;  // VGA display height
+    
   // VGA signals
   wire hsync;
   wire vsync;
