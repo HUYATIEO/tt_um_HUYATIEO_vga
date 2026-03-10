@@ -116,7 +116,7 @@ module tt_um_HUYATIEO_vga (
       dir_y <= 0;
       dir_x <= 1;
       color_index <= 0;
-      //prev_y <= 0;
+      prev_y <= 0;
     end else begin
       prev_y <= pix_y;
       if (pix_y == 0 && prev_y != pix_y) begin
