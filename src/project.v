@@ -5,7 +5,7 @@
  */
 
 `default_nettype none
-`define COLOR_WHITE 3'd7
+`define COLOR_CYAN 3'd5
 
 module tt_um_HUYATIEO_vga (
     input  wire [7:0] ui_in,    // Dedicated inputs
@@ -86,7 +86,7 @@ module tt_um_HUYATIEO_vga (
   );
 
   palette palette_inst (
-      .color_index(cfg_color ? color_index : `COLOR_WHITE),
+      .color_index(cfg_color ? color_index : `COLOR_CYAN),
       .rrggbb(color)
   );
 
